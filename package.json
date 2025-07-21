@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "axios": "^1.10.0",
+    "node": "^20.19.4"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "scripts": {
+  "frontend": "cd yt-mp3-frontend && npm start",
+  "backend": "cd yt-mp3-backend && uvicorn main:app --reload",
+  "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  }
+}
