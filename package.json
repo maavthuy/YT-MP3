@@ -7,8 +7,8 @@
     "concurrently": "^9.2.0"
   },
   "scripts": {
-  "frontend": "cd yt-mp3-frontend && npm start",
-  "backend": "cd yt-mp3-backend && uvicorn main:app --reload",
+  "frontend": "cd frontend-yt-mp3 && HOST=0.0.0.0 npm start",
+  "backend": "cd backend-yt-mp3 && uvicorn main:app --host 0.0.0.0 --port 8000 --reload",
   "dev": "concurrently \"npm run backend\" \"npm run frontend\""
   }
 }

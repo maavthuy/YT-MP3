@@ -1,2 +1,3 @@
 venv/
-
+backend-yt-mp3/downloads/
+package-lock.json
